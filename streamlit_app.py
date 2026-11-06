@@ -53,7 +53,7 @@ books_html = "".join(
         for index, book in enumerate(BOOKS, start=1)
 )
 
-st.markdown(
+st.html(
     dedent("""
         <style>
         @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Gowun+Batang:wght@400;700&family=Manrope:wght@400;500;600;700&display=swap');
@@ -267,10 +267,9 @@ st.markdown(
         }
         </style>
         """),
-        unsafe_allow_html=True,
 )
 
-st.markdown(
+st.html(
     dedent(f"""
         <div class="jungle-page" id="top">
             <nav class="topbar" aria-label="페이지 메뉴">
@@ -331,5 +330,4 @@ st.markdown(
             </footer>
         </div>
         """),
-        unsafe_allow_html=True,
 )
